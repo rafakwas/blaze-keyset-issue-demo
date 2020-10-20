@@ -16,22 +16,16 @@
 
     <properties>
         <java.version>11</java.version>
-        <blaze-persistence.version>1.5.1</blaze-persistence.version>
         <commons-beanutils.version>1.7.0</commons-beanutils.version>
         <maven.build.timestamp.format>yyyy-MM-dd'T'HH-mm-ss'Z'</maven.build.timestamp.format>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <blaze-persistence.version>1.5.1</blaze-persistence.version>
         <testcontainers.version>1.14.3</testcontainers.version>
-        <swagger.version>3.0.0</swagger.version>
     </properties>
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>commons-beanutils</groupId>
-                <artifactId>commons-beanutils</artifactId>
-                <version>${commons-beanutils.version}</version>
-            </dependency>
             <dependency>
                 <groupId>com.blazebit</groupId>
                 <artifactId>blaze-persistence-bom</artifactId>
